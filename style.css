@@ -159,5 +159,75 @@ input{
    margin: 0
     }
 
+}
 
+@media only screen and (min-width: 1024px){
+    body{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    main{
+       width: 500px;
+       max-width: 90%;
+       
+    }
+
+    h1{
+        margin: 0;
+        font-size:4rem;
+        padding-left: 3rem;
+    }
+
+    p{
+        margin: 0;
+        max-width: 400px;
+        padding-left: 3rem;
+    }
+    
+    .logo{
+        margin: 50px 0 0 7rem;
+        height: 1.5rem;
+        width: 6.5rem;
+        }
+
+    input{
+        max-width: 30rem;
+        width: 20rem;
+        padding: 15px 60px 15px 20px;
+        margin-left: 55px;
+    }
+
+    .btn{
+        padding: 24px 40px;
+        width: 3rem;
+        max-width: 3rem;
+        top: 0;
+        left: 20rem;
+        justify-self: flex-end;
+    }
+    
+    .btn::after{
+        right: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    .logo{
+        margin: 50px 0 0 16.8rem
+    }
+
+    h1{
+        margin: 0;
+        font-size:4rem;
+        padding-top: 20px;
+    }
+
+    body{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
 }
