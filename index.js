@@ -10,7 +10,8 @@ submit.addEventListener('click', e =>{
     const email = inputText.value
 
     if (emailPattern.test(email)){
-        console.log("success")
+        feedback.style.display = 'none'
+        error.style.display = 'none'
     } else{
         feedback.style.display = 'block'
         error.style.display = 'block'
